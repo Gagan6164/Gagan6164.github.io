@@ -1,0 +1,42 @@
+.skills {
+  padding: 5rem 7.2vw;
+  z-index: -10000;
+  color: #ffffff;
+  h1 {
+    font-size: 6vh;
+    margin: 0 0;
+    color: #ffffff;
+  }
+  .column {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 2rem;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 5vh;
+    .row {
+      .linear {
+        display: grid;
+        grid-template-columns: auto 85%;
+        grid-column-gap: 2rem;
+        position: relative;
+        margin: 2vh 0 0 0;
+        .lang {
+          padding-top: 4px;
+        }
+      }
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-column-gap: 2rem;
+    position: relative;
+    margin-top: 5vh;
+
+    .text {
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+}

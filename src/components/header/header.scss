@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+.nav {
+  display: flex;
+  padding: 1.5em 7vw;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  transition: 0.4s ease all;
+  z-index: 10000;
+
+  .nav_brand {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "Sacramento", cursive;
+  }
+
+  .nav_item_brand {
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 1000;
+    margin: 0 0 0 2.5em;
+  }
+  .nav_items {
+    padding: 0 0 0.25em;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 0 0 2.5em;
+  }
+
+  .nav_array_active {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      border-bottom: 2px solid white;
+      bottom: 0;
+      left: 15%;
+      width: 70%;
+      content: " ";
+    }
+  }
+}
+
+.scroll {
+  background: rgb(255, 255, 255);
+  color: #1890ff;
+  padding: 1em 7vw;
+  box-shadow: 0px 6px 16px rgba(124, 124, 124, 0.34);
+
+  .nav_array_active {
+    &::after {
+      border-bottom-color: #000000;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.about {
+  background: #ffffff;
+  padding: 5rem 7.2vw;
+  z-index: 1000;
+  h1 {
+    font-size: 6vh;
+    margin: 0 0;
+    color: #1890ff;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 4rem;
+    position: relative;
+    padding: 0 0 0 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .about_me {
+      line-height: 140%;
+      color: #333333;
+
+      .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 2rem;
+        position: relative;
+        .window {
+          background-color: rgba(255, 255, 255, 0.514);
+          padding-top: 12px;
+          border-radius: 0.3125rem;
+          box-shadow: 0 0.1875rem 2.5rem rgba(100, 103, 105, 0.32);
+          li {
+            padding-left: 3vw;
+            text-decoration: none;
+            list-style-type: none;
+          }
+        }
+      }
+    }
+  }
+}

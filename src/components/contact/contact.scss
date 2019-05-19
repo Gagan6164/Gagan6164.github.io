@@ -1,0 +1,56 @@
+.contact {
+  padding: 5rem 7.2vw 0 7.2rem;
+  z-index: -10;
+  color: #ffffff;
+
+  h1 {
+    font-size: 6vh;
+    margin: 0 0;
+    color: #ffffff;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-column-gap: 4rem;
+    position: relative;
+    .form {
+      h2 {
+        color: #ffffff;
+      }
+      a {
+        color: #ffffff;
+      }
+
+      .link {
+        display: block;
+        .unit {
+          font-size: 1.1em;
+          margin-top: 1em;
+          color: #ffffff;
+        }
+      }
+    }
+    .social {
+      h2 {
+        color: #ffffff;
+      }
+
+      .link {
+        display: block;
+        .unit {
+          font-size: 1.1em;
+          margin-top: 1em;
+          color: #ffffff;
+        }
+      }
+      a {
+        color: #ffffff;
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+.credits {
+  padding: 5rem 7.2vw 1rem 7.2rem;
+  text-align: center;
+}
