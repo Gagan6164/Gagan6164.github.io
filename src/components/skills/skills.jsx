@@ -79,7 +79,7 @@ export default class Skills extends Component {
                 );
               }}
             </AnimatedProgressProvider>
-            ;<div className="text">Leadership</div>
+            <div className="text">Leadership</div>
           </div>
           <div>
             <AnimatedProgressProvider
@@ -105,7 +105,7 @@ export default class Skills extends Component {
                 );
               }}
             </AnimatedProgressProvider>
-            ;<div className="text">Creativity</div>
+            <div className="text">Creativity</div>
           </div>
           <div>
             <AnimatedProgressProvider
@@ -131,7 +131,7 @@ export default class Skills extends Component {
                 );
               }}
             </AnimatedProgressProvider>
-            ;<div className="text">Management</div>
+            <div className="text">Management</div>
           </div>
           <div>
             <AnimatedProgressProvider
@@ -157,7 +157,7 @@ export default class Skills extends Component {
                 );
               }}
             </AnimatedProgressProvider>
-            ;<div className="text">Hardwork</div>
+            <div className="text">Hardwork</div>
           </div>
           <div>
             <AnimatedProgressProvider
@@ -183,7 +183,7 @@ export default class Skills extends Component {
                 );
               }}
             </AnimatedProgressProvider>
-            ;<div className="text">Will Power</div>
+            <div className="text">Will Power</div>
           </div>
           <div>
             <AnimatedProgressProvider
@@ -209,7 +209,7 @@ export default class Skills extends Component {
                 );
               }}
             </AnimatedProgressProvider>
-            ;<div className="text">Motivation</div>
+            <div className="text">Motivation</div>
           </div>
         </div>
       </Element>
