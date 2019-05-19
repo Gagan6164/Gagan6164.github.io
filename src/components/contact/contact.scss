@@ -1,19 +1,41 @@
+@mixin mobile {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
 .contact {
   padding: 5rem 7.2vw 0 7.2rem;
   z-index: -10;
   color: #ffffff;
+  @include mobile {
+    display: block;
+    padding: 5rem 7.2vw 10px;
+    align-content: center;
+  }
 
   h1 {
     font-size: 6vh;
     margin: 0 0;
     color: #ffffff;
+    @include mobile {
+      display: block;
+      font-size: 30px;
+      text-align: center;
+    }
   }
   .container {
     display: grid;
     grid-template-columns: 60% auto;
     grid-column-gap: 4rem;
     position: relative;
+    @include mobile {
+      display: block;
+    }
     .form {
+      @include mobile {
+        display: block;
+        text-align: center;
+      }
       h2 {
         color: #ffffff;
       }
@@ -31,6 +53,10 @@
       }
     }
     .social {
+      @include mobile {
+        display: block;
+        text-align: center;
+      }
       h2 {
         color: #ffffff;
       }
@@ -53,4 +79,8 @@
 .credits {
   padding: 5rem 7.2vw 1rem 7.2rem;
   text-align: center;
+  @include mobile {
+    display: block;
+    padding: 50px 0 0 0;
+  }
 }

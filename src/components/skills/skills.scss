@@ -1,3 +1,8 @@
+@mixin mobile {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
 .skills {
   padding: 5rem 7.2vw;
   z-index: -10000;
@@ -6,7 +11,13 @@
     font-size: 6vh;
     margin: 0 0;
     color: #ffffff;
+    @include mobile {
+      display: block;
+      font-size: 30px;
+      text-align: center;
+    }
   }
+
   .column {
     display: grid;
     grid-template-columns: auto auto;
@@ -14,6 +25,9 @@
     position: relative;
     z-index: 10;
     margin-bottom: 5vh;
+    @include mobile {
+      display: block;
+    }
     .row {
       .linear {
         display: grid;
@@ -21,8 +35,14 @@
         grid-column-gap: 2rem;
         position: relative;
         margin: 2vh 0 0 0;
+        @include mobile {
+          display: block;
+        }
         .lang {
           padding-top: 4px;
+          .react-sweet-progress-symbol {
+            color: #ffffff !important;
+          }
         }
       }
     }
@@ -33,10 +53,20 @@
     grid-column-gap: 2rem;
     position: relative;
     margin-top: 5vh;
+    @include mobile {
+      display: block;
+      margin: 10px 100px 0 100px;
+    }
 
     .text {
       color: #ffffff;
       text-align: center;
+      @include mobile {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-size: 21px;
+      }
     }
   }
 }
